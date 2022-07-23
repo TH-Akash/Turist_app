@@ -32,7 +32,7 @@ const AuthMiddleware = ({ component: Page, isProtected, role, ...rest }) => {
           );
         }}
       />
-      )
+      
     </>
   );
 };
