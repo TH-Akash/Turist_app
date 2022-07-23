@@ -7,6 +7,9 @@ import { Switch, Route, Link,  BrowserRouter as Router,
 import {privateRoutes, publicRoutes} from "./routes/routes"
 import AuthMiddleware from './routes';
 import { useEffect } from 'react';
+import AdminLayout from './views/layOut/AdminLayout';
+import PublicLayout from './views/layOut/PublicLayout';
+import { LOCAL_STORAGE_KEY } from './const/const';
 
 function App() {
 
@@ -29,6 +32,26 @@ function App() {
 
 // jhdnhf
 
+
+const datas={
+  name:"saimon the dev",
+  age:"None"
+}
+
+useEffect(()=>{
+
+
+  //  localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(datas))
+  //  localStorage.removeItem(LOCAL_STORAGE_KEY)
+
+     
+},[])
+
+
+
+
+
+
   return (
     <>
 
@@ -42,6 +65,7 @@ function App() {
         privateRoutes.map((route,index)=>{
 
           return <AuthMiddleware  
+          layout={AdminLayout}
           key={index} 
           role={route.role}  
           path={route.path} 
@@ -53,6 +77,8 @@ function App() {
         publicRoutes.map((route,index)=>{
 
           return <AuthMiddleware  
+
+          layout={PublicLayout}
           isProtected={false}
           key={index} 
           role={route.role}  

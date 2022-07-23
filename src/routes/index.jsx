@@ -1,8 +1,9 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
-import LayOut from "../views/layOut";
 
-const AuthMiddleware = ({ component: Page, isProtected, role, ...rest }) => {
+
+
+const AuthMiddleware = ({ layout:Layout, component: Page, isProtected, role, ...rest }) => {
 
 
   let login = true;
@@ -26,9 +27,9 @@ const AuthMiddleware = ({ component: Page, isProtected, role, ...rest }) => {
 
 
           return (
-            <LayOut>
+            <Layout>
               <Page {...props} />
-            </LayOut>
+            </Layout>
           );
         }}
       />

@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from './Footer';
 import Header from './Header';
 
-const LayOut = ({children}) => {
+const PublicLayout = ({children}) => {
 
 
 
@@ -18,4 +18,4 @@ const LayOut = ({children}) => {
     );
 };
 
-export default LayOut;
+export default PublicLayout;

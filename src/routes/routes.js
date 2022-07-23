@@ -14,7 +14,7 @@ export  const privateRoutes=[
          path:"/home",
          name:"home",
          component:Home,
-         role:["ad2", "superAdmin"]
+         role:["*"]
         
 
     },

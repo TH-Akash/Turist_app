@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeManin from '../../components/Home';
-import LayOut from '../../layOut';
+
 
 
 
