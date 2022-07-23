@@ -6,6 +6,7 @@ import { Switch, Route, Link,  BrowserRouter as Router,
 } from "react-router-dom";
 import {privateRoutes, publicRoutes} from "./routes/routes"
 import AuthMiddleware from './routes';
+import { useEffect } from 'react';
 
 function App() {
 
@@ -13,8 +14,17 @@ function App() {
 
 
 
-  
-console.log("app")
+//   filter((value)=>{
+
+//     if( value.role.includes(myRole)){
+
+//       return true
+//     }else{
+
+//       return false
+//     }
+//  })
+
 
 
 
@@ -24,21 +34,11 @@ console.log("app")
 <Router>
 
       
-<Switch>
+     <Switch>
         
 
         {
-        privateRoutes.filter((value)=>{
-
-           if( value.role.includes(myRole)){
-
-             return true
-           }else{
-
-             return false
-           }
-        })
-        .map((route,index)=>{
+        privateRoutes.map((route,index)=>{
 
           return <AuthMiddleware  
           key={index} 
