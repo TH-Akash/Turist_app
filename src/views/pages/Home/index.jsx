@@ -5,6 +5,7 @@ import HomeManin from '../../components/Home';
 
 
 
+
 const Home = () => {
 
 
@@ -16,6 +17,7 @@ const Home = () => {
 
 
         <HomeManin/>
+     
 
       
            
