@@ -1,6 +1,7 @@
 import About from "../views/pages/About"
 import Home from "../views/pages/Home"
 import LogIn from "../views/pages/LogIn"
+import Signup from "../views/pages/Signup"
 import AdminLayout from "../views/layOut/AdminLayout"
 
 export  const privateRoutes=[
@@ -33,6 +34,14 @@ export const  publicRoutes=[
             role:[ "*"]
 
     },
+    {
+
+        path:"/Signup",
+        name:"signup",
+        component:Signup,
+        role:[ "*"]
+
+},
 
     {
 

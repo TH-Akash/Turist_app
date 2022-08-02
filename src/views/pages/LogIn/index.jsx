@@ -13,6 +13,11 @@ const LogIn  = () =>{
 
 
     return (
+        <>
+         <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-3 "></div>
+                    <div class="col-md-6 ">
         <form
         onSubmit={ (e) =>{
             e.preventDefault();
@@ -30,9 +35,7 @@ const LogIn  = () =>{
                     aria-describedby="emailHelp"
                     placeholder="Enter User Name"
                 />
-                <small id="emailHelp" class="form-text text-muted">
-                    We'll never share your email with anyone else.
-                </small>
+                
             </div>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
@@ -46,9 +49,7 @@ const LogIn  = () =>{
                     aria-describedby="emailHelp"
                     placeholder="Enter email"
                 />
-                <small id="emailHelp" class="form-text text-muted">
-                    We'll never share your email with anyone else.
-                </small>
+               
             </div>
             <div class="form-group">
                 <label for="exampleInputPassword1">Password</label>
@@ -76,6 +77,11 @@ const LogIn  = () =>{
                 Submit
             </button>
         </form>
+        </div>
+        <div class="col-md-3 "></div>
+        </div>
+        </div>
+        </>
     );
 };
 export default LogIn;
