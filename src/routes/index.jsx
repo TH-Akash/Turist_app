@@ -1,8 +1,6 @@
 import React from "react";
 import { Route, Redirect } from "react-router-dom";
 
-
-
 const AuthMiddleware = ({ layout:Layout, component: Page, isProtected, role, ...rest }) => {
 
 
@@ -22,10 +20,7 @@ const AuthMiddleware = ({ layout:Layout, component: Page, isProtected, role, ...
             );
           }
 
-       
-
-
-
+      
           return (
             <Layout>
               <Page {...props} />
